@@ -64,7 +64,7 @@ function stringToSlug(str) {
   $button.addEventListener('click', (d) => {
       const issueTitle = document.querySelector('.js-issue-title').innerText;
       const issueId = window.location.pathname.split('/').pop();
-      const branchTitle = stringToSlug(`issue ${issueId}-${issueTitle}`);
+      const branchTitle = stringToSlug(`${issueId}-${issueTitle}`);
       // Selecting the source branch
       const dropdown = document.getElementById('dropdown-issue-all-branches');
       const selected = dropdown.options[dropdown.selectedIndex].text;
